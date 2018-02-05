@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="92px"
+            android:gravity="center_vertical"
+            android:focusable="true"
+            android:padding="6px"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="6px"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="美图超级品牌日，嬴1127元E卡"
+                android:id="@+id/ed_search"
+                android:paddingBottom="10px"
+                android:paddingLeft="30px"
+                android:paddingTop="10px"
+                android:textColor="#333"
+                android:textColorHint="#666"
+                android:textSize="12sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/tv_search"
+                android:text="搜索"
+                android:layout_marginRight="20px"
+                android:layout_marginLeft="16px"
+                android:gravity="center"
+                android:textColor="#000fff"
+                android:textSize="14sp"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="热搜"
+                android:padding="20px"
+                android:textSize="36px"/>
+            <com.example.hello.myappzhoukao1.FlowLayout
+                android:id="@+id/flow_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+            </com.example.hello.myappzhoukao1.FlowLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20px">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_weight="0"
+                android:layout_height="wrap_content"
+                android:text="历史搜索"
+                android:textSize="36px"/>
+            <com.example.hello.myappzhoukao1.MyListView
+                android:id="@+id/lv_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </com.example.hello.myappzhoukao1.MyListView>
+
+        </LinearLayout>
+        <Button
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="清空历史搜索"
+            android:id="@+id/btn_delete"/>
+
+    </LinearLayout>
+
+</ScrollView>
